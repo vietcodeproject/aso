@@ -1,0 +1,87 @@
+/*trying to get responsive lol */
+
+@media (min-width: 1200px)
+{
+    .alignBody .container
+    {
+        
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .alignBody
+    {
+        padding-top:5%;
+    }
+}
+
+@media (max-width: 430px)
+{
+    .container .postPreview
+    {
+        display: block;
+    }
+
+    .responsive
+    {
+        padding-left: 7%;
+    }
+
+    .responsivePost h2 
+    {
+        padding-top: 5%;
+    }
+
+    .responsive2 
+    {
+        padding-left: 10%;
+    }
+}
+
+.postPreview
+{
+    display: flex;
+}
+
+.container .post p
+{
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.post img
+{
+    margin-top: 10px;
+}
+
+.responsive
+{
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    padding-right: 40px;
+    float: left;
+}
+
+.responsive2
+{
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    padding-right: 40px;
+    padding-left: 10%;
+}
+
+.responsivePost
+{
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    float: left;
+}
+
+.responsivePost h1,h2,h3
+{
+    margin-top: 0;
+}
