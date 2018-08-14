@@ -94,3 +94,117 @@ img {
 .demo:hover {
   opacity: 1;
 }
+
+
+/*bài viết sử dụng css grid*/
+
+@media screen and (min-width: 760px) /*desktop mode */
+{
+  .grid-post
+  {
+    display: grid;
+    padding-left: 15vw;
+    padding-right: 10vw;
+    grid-template-columns: 40% auto;
+    grid-column-gap: 2.5em;
+    grid-template-rows: auto auto;
+  }
+  
+  .post-image
+  {
+    grid-column: 1 / 2;
+  }
+  
+  .post-image img
+  {
+    width: 25vw;
+  }
+  
+  .post-text
+  {
+    grid-column: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 760px) /*phone mode*/
+{
+  .grid-post
+  {
+    display: grid;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-template-rows: auto auto;
+  }
+    
+  .post-image
+  {
+    padding-top: 4vh;
+    grid-row: 1 / 2;
+  }
+    
+  .post-image img
+  {
+    width: 80vw;
+    height: auto;
+    align-self: center;
+  }
+    
+  .post-text
+  {
+    grid-row: 2 / 3;
+  }
+}
+
+.img-center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/*ASO logo img giới thiệu*/
+@media screen and (max-width: 991px) { .img-center {margin-right: auto;}}
+@media screen and (min-width: 991px) { .img-center {margin-right: 0;}}
+
+/*CSS Grid giới thiệu thành viên*/
+.grid-team
+{
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
+  grid-column-gap: 1.8em;
+}
+
+.member-grid img
+{ 
+  width: 15em;
+  border-radius: 4px;
+}
+
+.member-grid h1, h2, h3, h4
+{
+  color: #222;
+  text-align: center;
+}
+
+.member-grid h3
+{
+  padding-top: 1em;
+  font-weight: 570;
+}
+
+.member-grid h4
+{
+  margin-bottom: 1em;
+}
+
+.member-img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
